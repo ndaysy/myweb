@@ -36,4 +36,4 @@ cp ${targetPath}/myweb.war ${appPath}
 
 #####################################
 # 压缩成${appName}.tar.gz
-tar -czvfP ${zipPath}/${appName}.tar.gz ${appPath}
+tar -czvPf ${zipPath}/${appName}.tar.gz ${appPath}
