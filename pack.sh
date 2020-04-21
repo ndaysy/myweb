@@ -6,7 +6,7 @@ appName="myweb"
 # 生成压缩包的根路径
 #zipPath="/var/jenkins_home/packtemp"
 echo "WORKSPACE_TMP=$WORKSPACE_TMP"
-zipPath="${WORKSPACE_TMP}/packtemp"
+zipPath="${WORKSPACE}/packtemp"
 appPath="${zipPath}/${appName}"
 
 mkdir -p ${appPath}
