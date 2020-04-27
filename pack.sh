@@ -34,5 +34,5 @@ cp ${targetPath}/myweb.war ${zipPath}
 # 压缩成${imageName}.tar.gz
 # 注意压缩包需要放到Jenkins的WORKSPACE下，否则ssh publishers插件会找不到文件
 rm -rf ${WORKSPACE}/${imageName}.tar.gz
-tar -czvPf ${WORKSPACE}/${imageName}.tar.gz ${zipPath}
+tar -czvPf ${WORKSPACE}/${imageName}.tar.gz -C ${zipPath}/.. ${imageName}
 rm -rf ${zipPath}
